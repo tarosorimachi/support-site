@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポートページ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #007AFF;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    section {
+      background-color: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+    }
+    .faq-item dt {
+      font-weight: bold;
+    }
+    .faq-item dd {
+      margin: 5px 0 10px 20px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    form button {
+      background-color: #007AFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #005BBB;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>サポートページ</h1>
+  </header>
+
+  <section>
+    <h2>よくある質問（FAQ）</h2>
+    <dl class="faq-item">
+      <dt>Q: アプリの使い方がわかりません。</dt>
+      <dd>A: まずはアプリ内のチュートリアルをご覧ください。それでもご不明な点がある場合は、下記のお問い合わせフォームからご連絡ください。</dd>
+    </dl>
+    <dl class="faq-item">
+      <dt>Q: SNSリンクの交換方法がわかりません。</dt>
+      <dd>A: アプリ内の交換ボタンをタップすると、自動でリンクが送信されます。詳しくは操作ガイドをご覧ください。</dd>
+    </dl>
+    <dl class="faq-item">
+      <dt>Q: 写真が正しく保存されません。</dt>
+      <dd>A: ストレージの容量やパーミッションを確認してください。問題が続く場合はお問い合わせください。</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <!-- action属性はサーバー側の設定に合わせて変更してください -->
+    <form action="mailto:support@example.com" method="post" enctype="text/plain">
+      <label for="name">お名前:</label>
+      <input type="text" id="name" name="name" required placeholder="お名前を入力してください">
+      
+      <label for="email">メールアドレス:</label>
+      <input type="email" id="email" name="email" required placeholder="メールアドレスを入力してください">
+      
+      <label for="message">お問い合わせ内容:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容を入力してください"></textarea>
+      
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>トラブルシューティングガイド</h2>
+    <ul>
+      <li>アプリがクラッシュする場合: 最新バージョンにアップデートしてください。</li>
+      <li>SNSリンクが交換できない場合: インターネット接続を確認してください。</li>
+      <li>写真が保存されない場合: ストレージの空き容量を確認してください。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p style="text-align: center; font-size: 14px; color: #777;">&copy; 2025 Your Company. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+</html>
